@@ -402,14 +402,14 @@ class EServiceFormView extends GetView<EServiceFormController> {
                   hintText: "Piece".tr,
                   labelText: "Quantity Unit".tr,
                 ),
-                TextFieldWidget(
-                  onSaved: (input) => controller.eService.value.duration = input,
-                  initialValue: controller.eService.value.duration,
-                  validator: (input) => input.isNotEmpty && !RegExp(r"^[0-1][0-9]|2[0-3]|[1-9]:[0-5][0-9]").hasMatch(input) ? "Should be a valid time" : null,
-                  hintText: "02:30".tr,
-                  labelText: "Service Duration".tr,
-                  keyboardType: TextInputType.datetime,
-                ),
+                // TextFieldWidget(
+                //   onSaved: (input) => controller.eService.value.duration = input,
+                //   initialValue: controller.eService.value.duration,
+                //   validator: (input) => input.isNotEmpty && !RegExp(r"^[0-1][0-9]|2[0-3]|[1-9]:[0-5][0-9]").hasMatch(input) ? "Should be a valid time" : null,
+                //   hintText: "02:30".tr,
+                //   labelText: "Service Duration".tr,
+                //   keyboardType: TextInputType.datetime,
+                // ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                   margin: EdgeInsets.all(20),
